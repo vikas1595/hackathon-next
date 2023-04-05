@@ -47,7 +47,6 @@ jobs:
       run: poetry install --no-interaction --no-root
       
     - name: Activate virtualenv
-      working-directory: ${{env.working-directory}}
       run: |
           . .venv/bin/activate
           echo PATH=$PATH >> $GITHUB_ENV
